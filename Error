@@ -1,0 +1,7 @@
+2
+
+由於 Node.js v17 的更改，添加了 --openssl-legacy-provider 以處理 OpenSSL v3 上的密鑰大小。您以某種方式安裝了最新版本的節點。
+
+恢復你以前版本的 nodejs。
+從 package.json 和 packagelock.json 中手動刪除節點依賴項（例如“node”：17.4.3）。
+刪除 node_modules 文件夾並使用 npm install 重新安裝 node_modules。
